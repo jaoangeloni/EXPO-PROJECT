@@ -67,6 +67,10 @@ export default function App() {
     return '#3A3A3C';
   };
 
+  const isCurrentChar = (rowIndex: number, charIndex: number): boolean => {
+    return rowIndex === activeRow && guesses[rowIndex].length === charIndex;
+  };
+
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       <ScrollView contentContainerStyle={styles.content}>
@@ -83,7 +87,10 @@ export default function App() {
                   key={i}
                   style={[styles.box, {
                     backgroundColor: getBoxColor(guess[i], i, rowIndex),
-                    borderColor: rowIndex === activeRow ? '#818384' : '#3A3A3C'
+                    borderColor: isCurrentChar(rowIndex, i)
+                      ? '#FFFFFF'
+                      : rowIndex === activeRow ? '#818384' : '#3A3A3C',
+                    borderWidth: isCurrentChar(rowIndex, i) ? 3 : 2
                   }]}
                 >
                   <Text style={styles.letter}>{guess[i] || ''}</Text>
