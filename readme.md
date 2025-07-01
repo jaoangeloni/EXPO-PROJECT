@@ -3,11 +3,11 @@
 Este é um pequeno jogo estilo **Termo/Wordle**, desenvolvido com **React Native**, onde o usuário precisa adivinhar uma palavra de 5 letras em até 6 tentativas. O app oferece feedback visual para cada letra digitada, indicando se a letra está correta e/ou na posição certa.
 
 ---
-🧑‍💻 Autores
-João Pedro Angeloni Alvarenga
-Rafael de Souza Oliveira
-Victor Augusto Nascimento
-Weslley Novelino Cavallaro
+## 🧑‍💻 Autores
+- João Pedro Angeloni Alvarenga
+- Rafael de Souza Oliveira
+- Victor Augusto Nascimento
+- Weslley Novelino Cavallaro
 
 ## 🚀 Funcionalidades
 
@@ -23,11 +23,11 @@ Weslley Novelino Cavallaro
 
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Expo](https://expo.dev/) (opcional, mas recomendado para facilitar execução)
+- [Expo](https://expo.dev/)
 
 ---
 
-## 🧩 Estrutura de Componentes
+## 🧩 Estrutura dos componentes
 
 ```bash
 .
@@ -39,61 +39,45 @@ Weslley Novelino Cavallaro
 ├── utils/
 │   └── words.ts        # Constantes e função para sortear a palavra
 ⚙️ Como Rodar o Projeto
-Clone o repositório:
+```
 
-bash
-Copiar
-Editar
-git clone https://github.com/seu-usuario/jogo-palavras-react-native.git
-cd jogo-palavras-react-native
+Clone e acesse o repositório:
+
+```bash
+git clone https://github.com/jaoangeloni/EXPO-PROJECT.git
+cd EXPO-PROJECT
+```
+
 Instale as dependências:
 
-bash
-Copiar
-Editar
+```bash
 npm install
-# ou
-yarn
+```
+
 Execute o projeto (via Expo):
-
-bash
-Copiar
-Editar
+```bash
 npm start
-Caso ainda não tenha o Expo CLI instalado, siga o guia oficial: Instalação do Expo CLI
+```
 
-🎨 Feedback Visual
-🔲 Cinza escuro: letra ainda não avaliada
+## 🎨 Feedback Visual
+- 🔲 Cinza escuro: letra ainda não avaliada
+- 🟨 Amarelo: letra existe na palavra, mas está na posição errada
+- 🟩 Verde: letra correta na posição correta
+- ⬜ Contorno branco: letra atualmente sendo digitada
 
-🟨 Amarelo: letra existe na palavra, mas está na posição errada
+## 📚 Referências
+- React Native Docs: https://reactnative.dev/docs/getting-started
+- StyleSheet em React Native: https://reactnative.dev/docs/style
+- Manipulação de múltiplos refs com useRef: https://react.dev/reference/react/useRef
+- Conceito do jogo Wordle: https://www.nytimes.com/games/wordle/index.html
+- Expo: https://expo.dev/
 
-🟩 Verde: letra correta na posição correta
+## 🧠 Aprendizados
+- Gerenciamento de estado com useState
+- Composição de interfaces reativas e acessíveis
+- Componentização de telas em React Native
 
-⬜ Contorno branco: letra atualmente sendo digitada
-
-📚 Referências
-React Native Docs: https://reactnative.dev/docs/getting-started
-
-StyleSheet em React Native: https://reactnative.dev/docs/style
-
-Manipulação de múltiplos refs com useRef: https://react.dev/reference/react/useRef
-
-Conceito do jogo Wordle: https://www.nytimes.com/games/wordle/index.html
-
-Expo (ambiente para apps mobile): https://expo.dev/
-
-🧠 Aprendizados
-Este projeto explora:
-
-Gerenciamento de estado com useState
-
-Composição de interfaces reativas e acessíveis
-
-Componentização de telas em React Native
-
-📌 Futuras Melhorias
-Suporte a diferentes tamanhos de palavras
-
-Inclusão de animações de vitória/erro
-
-Histórico de partidas e estatísticas
+## 📌 Futuras Melhorias
+- Suporte a diferentes tamanhos de palavras
+- Inclusão de animações de vitória/erro
+- Histórico de partidas e estatísticas
